@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>horror</title>
+    <link rel="stylesheet" href="../css/after home.css">
+</head>
+<body>
+<div class='container'>
+    <div class='center list flex-column'>
+      <div class='card flex-row open'>
+        <img src='../assets/IT.jpeg' class='book'>
+        <div class='flex-column info'>
+          <div class='title'>IT</div>
+          <div class='author'>Stephen King</div>
+          <div class='hidden bottom summary'>
+            At nearly 1200 pages, IT is by far the longest novel on this list. It’s also the richest and most rewarding. Despite the book’s size, its plot can be reduced quite easily: a group of misfit kids fight a great evil in their small town during one long summer...
+        </p>
+          </div>
+        </div>
+        <div class='flex-column group'>
+          <div class='members'>
+            <span class='current'>1</span> /
+            <span class='max'>2</span>
+          </div>
+          <div class='hidden bottom'>
+            <a class="simple" href="./IT.html">Open</a>
+          </div>
+        </div>
+      </div>
+      <div class='card flex-row'>
+        <img src='../assets/House of Leaves.jpeg' class='book'>
+        <div class='flex-column info'>
+          <div class='title'>House of Leaves</div>
+          <div class='author'>Mark Z. Danielewski</div>
+          <div class='hidden bottom summary'>
+            If Shirley Jackson opened the era of the modern haunted house, House of Leaves is the closing parenthesis. Such a typographical metaphor is apt, considering the games that Danielewski plays in his oh-so-meta tangle of words, image, and white space. Where to even begin summarising this book? At the centre is The Navidson Record—an academic text deconstructing an inexplicable video of a house that is larger on the inside than the outside...
+          </div>
+        </div>
+        <div class='flex-column group'>
+          <div class='members'>
+            <span class='current'>2</span> /
+            <span class='max'>2</span>
+          </div>
+          <div class='hidden bottom'>
+            <a class="simple" href="./House of Leaves.html">Open</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <script>
+  let card = document.querySelectorAll('.card');
+  
+  card.forEach(i => {
+    i.onclick = (e) => {
+      card.forEach(s => {
+        s.classList.remove('open');
+      })
+      i.classList.add('open');
+    }
+  })
+  </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</body>
+
+</html>

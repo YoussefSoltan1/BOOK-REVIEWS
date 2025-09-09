@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comedy</title>
+    <link rel="stylesheet" href="../css/after home.css">
+</head>
+<body>
+<div class='container'>
+    <div class='center list flex-column'>
+      <div class='card flex-row open'>
+        <img src='../assets/Such A Fun Age by Kiley Reid (2019).jpeg' class='book'>
+        <div class='flex-column info'>
+          <div class='title'>Such A Fun Age</div>
+          <div class='author'>Kiley Reid </div>
+          <div class='hidden bottom summary'>
+            When stalled blogger and girl boss incarnate Alix moves to Philadelphia from New York, she employs graduate Emira as a babysitter for her three-year-old to try and get her book finished. But when Emira, who's black, takes Alix's white toddler to the supermarket, she's accused of kidnapping and things start to spiral out of her control...
+        </p>
+          </div>
+        </div>
+        <div class='flex-column group'>
+          <div class='members'>
+            <span class='current'>1</span> /
+            <span class='max'>2</span>
+          </div>
+          <div class='hidden bottom'>
+            <a class="simple" href="./Such A Fun Age.html">Open</a>
+          </div>
+        </div>
+      </div>
+      <div class='card flex-row'>
+        <img src='../assets/The Collected Dorothy Parker.jpeg' class='book'>
+        <div class='flex-column info'>
+          <div class='title'>The Collected Dorothy Parker</div>
+          <div class='author'>Dorothy Parker</div>
+          <div class='hidden bottom summary'>
+            Perhaps the most mercilessly, eyebrow-cockingly dry of the great Jazz Age humourists, there weren't many things Dorothy Parker couldn't sharpen with her witheringly sardonic outlook. This collection brings together poems, short stories, reviews and essays which showcase her wit...
+          </div>
+        </div>
+        <div class='flex-column group'>
+          <div class='members'>
+            <span class='current'>2</span> /
+            <span class='max'>2</span>
+          </div>
+          <div class='hidden bottom'>
+            <a class="simple" href="./The Collected Dorothy Parker.html">Open</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <script>
+  let card = document.querySelectorAll('.card');
+  
+  card.forEach(i => {
+    i.onclick = (e) => {
+      card.forEach(s => {
+        s.classList.remove('open');
+      })
+      i.classList.add('open');
+    }
+  })
+  </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</body>
+
+</html>

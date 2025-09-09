@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime</title>
+    <link rel="stylesheet" href="../css/after home.css">
+</head>
+<body>
+<div class='container'>
+    <div class='center list flex-column'>
+      <div class='card flex-row open'>
+        <img src='../assets/Demon Slayer.jpeg' class='book'>
+        <div class='flex-column info'>
+          <div class='title'>Demon Slayer</div>
+          <div class='author'>Koyoharu Gotouge</div>
+          <div class='hidden bottom summary'>
+            Tanjiro sets out on the path of the Demon Slayer to save his sister and avenge his family! In Taisho-era Japan, kindhearted Tanjiro Kamado makes a living selling charcoal. But his peaceful life is shattered when a demon slaughters his entire family...
+        </p>
+          </div>
+        </div>
+        <div class='flex-column group'>
+          <div class='members'>
+            <span class='current'>1</span> /
+            <span class='max'>2</span>
+          </div>
+          <div class='hidden bottom'>
+            <a class="simple" href="./Demon Slayer.html">Open</a>
+          </div>
+        </div>
+      </div>
+      <div class='card flex-row'>
+        <img src='../assets/jojo.jpeg' class='book'>
+        <div class='flex-column info'>
+          <div class='title'>JoJo</div>
+          <div class='author'>Horihiko Araki</div>
+          <div class='hidden bottom summary'>
+            A multigenerational tale of the heroic Joestar family and their never-ending battle against evil! Young Jonathan Joestar’s life is forever changed when he meets his new adopted brother, Dio. For some reason, Dio has a smoldering grudge against him and derives pleasure from seeing him suffer...
+          </div>
+        </div>
+        <div class='flex-column group'>
+          <div class='members'>
+            <span class='current'>2</span> /
+            <span class='max'>2</span>
+          </div>
+          <div class='hidden bottom'>
+            <a class="simple" href="./jojo.html">Open</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <script>
+  let card = document.querySelectorAll('.card');
+  
+  card.forEach(i => {
+    i.onclick = (e) => {
+      card.forEach(s => {
+        s.classList.remove('open');
+      })
+      i.classList.add('open');
+    }
+  })
+  
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</body>
+
+</html>
